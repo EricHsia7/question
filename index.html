@@ -57,7 +57,7 @@ function share() {
     function submits() {
       var q = document.querySelector("#question").value;
     $('#ans').html('<center><div class="ansbox" style="display:none;"> <span id="out"></span></div></center>');
-    $('.ansbox').fadeIn(333);
+    $('.ansbox').delay(250).fadeIn(1);
     $('.box,#ansb').fadeOut(1);
     $('#ansb').delay(600).attr('href','javascript:next()').html('再問一個');
    
