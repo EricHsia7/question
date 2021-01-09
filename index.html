@@ -140,8 +140,7 @@ $.ajax({
             data: JSON.stringify({ Topic: q, MinLen: 20 }),
             dataType: "text",
             success: function(r) {
-              $("#content").html(r)
-              qqqans = r ;
+              qqqans = r.replace(/\s*/g,"");
             }
           })
 document.querySelector(".ansbox").innerHTML = '<center>Q:' + q + '<br><br><div class="loaddiv"></div></center>' ;
