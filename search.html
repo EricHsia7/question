@@ -25,8 +25,9 @@ display:none;
 <script async src="https://cse.google.com/cse.js?cx=fb94688838971e45f"></script>
 <div class="gcse-searchresults-only"></div>
 <script>
+  //*[title~="Google 提供的廣告"],
   function pp() {
-  $('*img[alt~="縮圖圖片"],*[title~="Google 提供的廣告"],.gcsc-find-more-on-google-root,.gcsc-more-maybe-branding-root,.gsc-cursor-box,.gsc-result-info').fadeOut(1);
+  $('*img[alt~="縮圖圖片"],.gcsc-find-more-on-google-root,.gcsc-more-maybe-branding-root,.gsc-cursor-box,.gsc-result-info').fadeOut(1);
   $('*').css({'border':'none'});
   }
   id = setInterval(pp, 10);
