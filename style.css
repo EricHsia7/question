@@ -110,7 +110,6 @@ height:auto;
 min-height:110px;
 margin-top:30px;
 border-radius:15px;
-transform:scale(0.9);
 -webkit-animation:'zoom' 0.3s ease-in-out 0s 1 alternate forwards;
 position: relative;
 }
