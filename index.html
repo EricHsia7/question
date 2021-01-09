@@ -147,10 +147,20 @@ window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<c
 
 }
 else {
+
+if(q === "") {
+ qqqans = '我不知道該怎麼回答。' ;
+document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br><div class="loaddiv"></div></center>' ;
+$('.loaddiv').css({'width': $('.ansbox').width()-30 });
+window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500); 
+}
+else {
 qqqans = '<iframe src="https://erichsia7.github.io/question/search.html?q=' + q + '" style="border:none;height:auto;width:90%;"></iframe>' ;
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br><div class="loaddiv"></div></center>' ;
 $('.loaddiv').css({'width': $('.ansbox').width()-30 });
 window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500);
+}
+  
 }
  if((qqqans.length*15) > ($( window ).width()*0.6)) {
  $('.loaddiv').css({'width': $('.ansbox').width()-30 });
