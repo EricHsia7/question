@@ -149,7 +149,16 @@ window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<c
 else {
 
 if(q === "") {
- qqqans = '我不知道該怎麼回答。' ;
+  $.ajax({
+            url: "https://api.howtobullshit.me/bullshit",
+            type: "post",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({ Topic: q, MinLen: 20 }),
+            dataType: "text",
+            success: function(r) {
+              qqqans = r ;
+            }
+          })
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br><div class="loaddiv"></div></center>' ;
 $('.loaddiv').css({'width': $('.ansbox').width()-30 });
 window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500); 
