@@ -24,8 +24,8 @@
 <z id="ans"> </z>
 
 <center>
-<a href="javascript:submit()" class="ans">解答</a>
-<a href="javascript:share()" class="">分享</a>
+<a href="javascript:submit()" class="ans" id="ansb">解答</a>
+<a href="javascript:share()" class="ans" id="share">分享</a>
 </center>
 
 <script>
@@ -48,7 +48,7 @@ function share() {
     function nexts() {
     $('.box').fadeIn(1);
     $('#ans').html('');
-    $('.ans').attr('href','javascript: submit()').html('解答');
+    $('.ansb').attr('href','javascript: submit()').html('解答');
     }
     function submit() {
     window.setTimeout(function() { submits(); }, 300);
@@ -56,8 +56,8 @@ function share() {
     function submits() {
       var q = document.querySelector("#question").value;
     $('#ans').html('<center><div class="ansbox"> <span id="out"></span></div></center>');
-    $('.box,.ans').fadeOut(1);
-    $('.ans').delay(600).attr('href','javascript:next()').html('再問一個');
+    $('.box,.ansb').fadeOut(1);
+    $('.ansb').delay(600).attr('href','javascript:next()').html('再問一個');
    
     var Today=new Date();
     var ds = new Date(Today.getFullYear(), Today.getMonth(), Today.getDate());
@@ -141,7 +141,7 @@ qqqans = hg[Math.ceil(Math.random()*4)] + qtype[type] + hhb[Math.ceil(Math.rando
 
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><div class="loaddiv"></div></center>' ;
 
-window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ;$('.ans').fadeIn(555); }, 5500);
+window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ;$('.ansb').fadeIn(555); }, 5500);
 
 }
 else {
@@ -157,7 +157,7 @@ $.ajax({
           })
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><div class="loaddiv"></div></center>' ;
 $('.loaddiv').css({'width': $('.ansbox').width()-30 });
-window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('.ans').fadeIn(555); }, 5500);
+window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('.ansb').fadeIn(555); }, 5500);
 }
  if((qqqans.length*15) > ($( window ).width()*0.6)) {
  $('.loaddiv').css({'width': $('.ansbox').width()-30 });
