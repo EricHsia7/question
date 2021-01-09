@@ -147,10 +147,10 @@ window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<c
 
 }
 else {
-              qqqans = '<iframe src="https://erichsia7.github.io/question/search.html?q="' + q + '"></iframe>' ;
+qqqans = '<div style="width:200px;height:200px;" id="search"></div>' ;
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br><div class="loaddiv"></div></center>' ;
 $('.loaddiv').css({'width': $('.ansbox').width()-30 });
-window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500);
+window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555);$('#search').load('https://erichsia7.github.io/question/search.html?q=' + q); }, 5500);
 }
  if((qqqans.length*15) > ($( window ).width()*0.6)) {
  $('.loaddiv').css({'width': $('.ansbox').width()-30 });
