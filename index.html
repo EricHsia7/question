@@ -137,7 +137,7 @@ $.ajax({
             url: "https://api.howtobullshit.me/bullshit",
             type: "post",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({ Topic: q, MinLen: 20 }),
+            data: JSON.stringify({ Topic: q, MinLen: ww }),
             dataType: "text",
             success: function(r) {
               qqqans = r.replace("&nbsp;","");
