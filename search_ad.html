@@ -8,10 +8,6 @@ input {caret-color:#212121;}
 img[alt~="縮圖圖片"] {
 display:none;
 }
-*[title~="Google 提供的廣告"] {
-  height:10px;
-  overflow:hidden;
-  }
 .gcsc-find-more-on-google-root {
 
 display:none;
@@ -26,8 +22,9 @@ display:none;
 <script async src="https://cse.google.com/cse.js?cx=fb94688838971e45f"></script>
 <div class="gcse-searchresults-only"></div>
 <script>
-  //*[title~="Google 提供的廣告"],
+  
   function pp() {
+  $('*[title~="Google 提供的廣告"]').css({'height':'10px'});
   $('*img[alt~="縮圖圖片"],.gcsc-find-more-on-google-root,.gcsc-more-maybe-branding-root,.gsc-cursor-box,.gsc-result-info').css({'display':'none'});;
   $('*').css({'border':'none'});
   $('a').attr("target","_blank");
