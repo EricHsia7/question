@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+* {-webkit-appearance:none;outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input {caret-color:#212121;}
+img[alt~="縮圖圖片"] {
+display:none;
+}
+*[title~="Google 提供的廣告"] {
+  display:none;
+  }
+.gcsc-find-more-on-google-root {
+
+display:none;
+
+}
+.gcsc-more-maybe-branding-root {
+
+display:none;
+}
+</style>
+
+<script async src="https://cse.google.com/cse.js?cx=fb94688838971e45f"></script>
+<div class="gcse-searchresults-only"></div>
+<script>
+  //*[title~="Google 提供的廣告"],
+  function pp() {
+  $('*img[alt~="縮圖圖片"],.gcsc-find-more-on-google-root,.gcsc-more-maybe-branding-root,.gsc-cursor-box,.gsc-result-info').css({'display':'none'});;
+  $('*').css({'border':'none'});
+  $('a').attr("target","_blank");
+  }
+  id = setInterval(pp, 10);
+</script>
