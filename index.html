@@ -94,7 +94,7 @@
             <a href="javascript:home()"><img src="icon/home_1.png" class="btn-cen" id="hico" /></a>
         </div>
         <div class="bottom-btn-b" style="left: 50%; transform: translate(-50%, 0%);">
-            <a href="javascript:support()"><img src="icon/bell.png" class="btn-cen" id="sico" /></a>
+            <a href="javascript:bell()"><img src="icon/bell.png" class="btn-cen" id="bico" /></a>
         </div>
         <div class="bottom-btn-b" style="right: 0%;">
             <a href="javascript:more()"><img src="icon/more.png" class="btn-cen" id="mico" /></a>
@@ -262,6 +262,23 @@ else {
 $('.loaddiv').css({'width': qqqans.length*15 });
 }
 document.querySelector("#question").value = '' ;
+}
+  
+function home() {
+  $('#hico').attr('src','icon/home.png');
+  $('#bico').attr('src','icon/bell_1.png');
+  $('#mico').attr('src','icon/more_1.png');
+}
+  
+  function bell() {
+  $('#hico').attr('src','icon/home_1.png');
+  $('#bico').attr('src','icon/bell.png');
+  $('#mico').attr('src','icon/more_1.png');
+}
+  function more() {
+  $('#hico').attr('src','icon/home_1.png');
+  $('#bico').attr('src','icon/bell_1.png');
+  $('#mico').attr('src','icon/more.png');
 }
 </script>
 
