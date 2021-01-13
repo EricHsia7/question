@@ -89,6 +89,9 @@
 }
 </style>
   
+  
+  <div style="width:100%;height:calc(100% - 49px);position:fixed;top:0px;left:0px;background:#fff;display:none;" id="bellbg">公告</div>
+  
   <div id="bottom" class="bottombar">
         <div class="bottom-btn-b" style="left: 0%;">
             <a href="javascript:home()"><img src="icon/home_1.png" class="btn-cen" id="hico" /></a>
@@ -268,17 +271,23 @@ function home() {
   $('#hico').attr('src','icon/home_1.png');
   $('#bico').attr('src','icon/bell.png');
   $('#mico').attr('src','icon/more.png');
+  
+  $('#bellbg').fadeOut(1);
 }
   
   function bell() {
   $('#hico').attr('src','icon/home.png');
   $('#bico').attr('src','icon/bell_1.png');
   $('#mico').attr('src','icon/more.png');
+    
+  $('#bellbg').fadeIn(1);
 }
   function more() {
   $('#hico').attr('src','icon/home.png');
   $('#bico').attr('src','icon/bell.png');
   $('#mico').attr('src','icon/more_1.png');
+  
+  $('#bellbg').fadeOut(1);
 }
 </script>
 
