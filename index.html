@@ -109,6 +109,10 @@ transform: translateX(-50%);
     <div class="boxs2"><span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;opacity:1;" id="betxt">...</span></div>
   </div>
   
+  <div style="width:100%;height:calc(100% - 49px);position:fixed;top:0px;left:0px;background:#fff;display:none;" id="morebg">
+    更多
+  </div>
+  
   <div id="bottom" class="bottombar">
         <div class="bottom-btn-b" style="left: 0%;">
             <a href="javascript:home()"><img src="icon/home_1.png" class="btn-cen" id="hico" /></a>
@@ -291,6 +295,7 @@ function home() {
   $('#mico').attr('src','icon/more.png');
   
   $('#bellbg').fadeOut(1);
+  $('#morebg').fadeOut(1);
 }
   
   function bell() {
@@ -299,6 +304,7 @@ function home() {
   $('#mico').attr('src','icon/more.png');
     
   $('#bellbg').fadeIn(1);
+  $('#morebg').fadeOut(1);
 }
   function more() {
   $('#hico').attr('src','icon/home.png');
@@ -306,6 +312,7 @@ function home() {
   $('#mico').attr('src','icon/more_1.png');
   
   $('#bellbg').fadeOut(1);
+  $('#morebg').fadeIn(1);
 }
 </script>
 
