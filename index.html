@@ -101,6 +101,23 @@ transform: translateX(-50%);
         opacity:1;
     }
 }
+  
+li {
+        list-style: none;
+        width: 100vw;
+        height: 50px;
+        font-size: 40px;
+        margin-top: 5px;
+        margin-left: 0;
+        border-bottom: 1px grey solid;
+        padding-bottom: 8px;
+        font-family: "Secular One", sans-serif;
+    }
+    ujj a {
+        color: grey;
+        text-decoration: none;
+        font-family: "Secular One", sans-serif;
+    }
 </style>
   
   
@@ -109,8 +126,21 @@ transform: translateX(-50%);
     <div class="boxs2"><span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;opacity:1;" id="betxt">...</span></div>
   </div>
   
-  <div style="width:100%;height:calc(100% - 49px);position:fixed;top:0px;left:0px;background:#fff;display:none;" id="morebg">
-    更多
+  <div style="width:100%;height:calc(100% - 49px);position:fixed;top:0px;left:0px;background:#fff;display:none;overflow: scroll;" id="morebg">
+        <ujj>
+            <center>
+                <a href="javascript:window.location.reload()">
+                    <li><center>重新整理</center></li>
+                </a>
+                <a href="">
+                    <li><center>關於</center></li>
+                </a>
+                <br />
+                <br />
+                <br />
+                <br />
+            </center>
+    </ujj>
   </div>
   
   <div id="bottom" class="bottombar">
