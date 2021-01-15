@@ -410,7 +410,7 @@ function home() {
             url:'https://erichsia7.github.io/question/privacy.md' ,
             dataType:"html",
             success:function(res){
-            $('#privacyinner').append(marked(res));
+            $('#privacyinner').html(marked(res));
             }
         })
     $('.privacybg').fadeIn(222).css({'transform':'translate(-50%,-50%) scale(' + 1 + ')','transition':'.5s'});
