@@ -404,6 +404,14 @@ function home() {
   $('#morebg').fadeIn(1);
 }
   function privacys() {
+    $.ajax({
+            type:"get",
+            url:'https://erichsia7.github.io/question/privacy.md' ,
+            dataType:"html",
+            success:function(res){
+            $('.privacybg').append(marked(res));
+            }
+        })
     $('.privacybg').fadeIn(222).css({'transform':'translate(-50%,-50%) scale(' + 1 + ')','transition':'.5s'});
   }
   function privacyss() {
