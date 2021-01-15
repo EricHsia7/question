@@ -42,3 +42,4 @@
 若你繼續使用本服務、網站，即表示您已詳閱並接受我們的隱私政策。
 # 備註
 [Google隱私政策](https://policies.google.com/privacy)
+[Github](https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement)
