@@ -346,7 +346,7 @@ width:15px;
 max-width:90%;
 height:30px;
 background: rgb(227,227,227);
-background: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(182,182,182,1) 7%, rgba(182,182,182,1) 13%, rgba(227,227,227,1) 25%);
+background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(182,182,182,1) 7%, rgba(182,182,182,1) 13%, rgba(51,51,51,1) 25%);
 background-size:900%;
 background-position: 100% 0%;
 animation: load 1.8s;
