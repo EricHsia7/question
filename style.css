@@ -3,6 +3,9 @@
 #bellbg {background:#fff;}
 #morebg {background:#fff;}
 #ansiframe {-webkit-filter:invert(0);filter:invert(0);}
+loadbg img {
+  -webkit-filter:invert(0);filter:invert(0);
+}
 .loaddiv {
 width:15px;
 max-width:90%;
@@ -679,4 +682,7 @@ position: relative;
   #bellbg {background:#212121;}
 #morebg {background:#212121;}
   #closebtn {-webkit-filter:invert(1);filter:invert(1);}
+  loadbg img {
+  -webkit-filter:invert(1);filter:invert(1);
+}
 }
