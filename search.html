@@ -20,7 +20,30 @@ display:none;
 
 display:none;
 }
-  
+  .darkf {
+  -webkit-backdrop-filter: invert(0);
+backdrop-filter: blinvertur(0);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0);
+    z-index:1000000;
+  }
+  @media (prefers-color-scheme: dark) {
+  .darkf {
+  -webkit-backdrop-filter: invert(1);
+backdrop-filter: blinvertur(1);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0);
+    z-index:1000000;
+  }
+  }
 </style>
 
 <script async src="https://cse.google.com/cse.js?cx=fb94688838971e45f"></script>
@@ -33,3 +56,4 @@ display:none;
   }
   id = setInterval(pp, 10);
 </script>
+<div class="darkf"></div>
