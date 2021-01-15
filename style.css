@@ -40,6 +40,7 @@ margin-top:30px;
 }
 body{
   font-family: sans-serif;
+  background:#fff;
 }
 #out {color:#333;opacity:1;margin:10px;}
 canvas {
@@ -378,5 +379,9 @@ overflow: hidden;
   box-sizing: border-box;
   outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0);
   color:#fff;
+  }
+    body{
+  font-family: sans-serif;
+  background:#212121;
 }
 }
