@@ -1,4 +1,5 @@
 .bottombar img {-webkit-filter:invert(0);filter:invert(0);}
+#closebtn {-webkit-filter:invert(0);filter:invert(0);}
 #bellbg {background:#fff;}
 #morebg {background:#fff;}
 #ansiframe {-webkit-filter:invert(0);filter:invert(0);}
@@ -674,7 +675,8 @@ margin-top:30px;
 border-radius:15px;
 position: relative;
   }
-  #ansiframe {-webkit-filter:invert(0);filter:invert(0);}
+  #ansiframe {-webkit-filter:invert(1);filter:invert(1);}
   #bellbg {background:#212121;}
 #morebg {background:#212121;}
+  #closebtn {-webkit-filter:invert(1);filter:invert(1);}
 }
