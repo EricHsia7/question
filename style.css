@@ -1,5 +1,5 @@
 .bottombar img {-webkit-filter:invert(0);filter:invert(0);}
-
+#ansiframe {background:#fff;}
 .loaddiv {
 width:15px;
 max-width:90%;
@@ -672,4 +672,5 @@ margin-top:30px;
 border-radius:15px;
 position: relative;
   }
+  #ansiframe {background:#212121;}
 }
