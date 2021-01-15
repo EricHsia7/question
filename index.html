@@ -223,7 +223,7 @@ $('.loaddiv').css({'width': $('.ansbox').width()-30 });
 window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500); 
 }
 else {
-qqqans = '<iframe src="https://erichsia7.github.io/question/search.html?q=' + q + '&a" style="border:none;height:250px;width:90%;overflow:hidden;background:none"scrolling="no"></iframe>' ;
+qqqans = '<iframe src="https://erichsia7.github.io/question/search.html?q=' + q + '&a" style="border:none;height:250px;width:90%;overflow:hidden;"scrolling="no" allowtransparency="true">></iframe>' ;
 document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br><div class="loaddiv" style="height:250px;"></div></center>' ;
 $('.loaddiv').css({'width': $('.ansbox').width()-30 });
 window.setTimeout(function() { document.querySelector(".ansbox").innerHTML = '<center><h2>問題</h2><br>' + q + '<br><br><h2>解答</h2><br>' + qqqans + '</center>' ; $('#ansb,#share').fadeIn(555); }, 5500);
